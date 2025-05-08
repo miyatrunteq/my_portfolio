@@ -77,3 +77,7 @@ Udemy等の参考書以外の別媒体の登録機能
 
 ・LINEAPI
 →LINEアプリからのPush通知のため
+
+
+■ ER図
+https://drive.google.com/file/d/1u1GLMUw_KVuUQPdIjJxmOh_p0jWdV__p/view?usp=sharing
