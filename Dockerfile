@@ -14,11 +14,6 @@ FROM docker.io/library/ruby:$RUBY_VERSION-slim AS base
 # Rails app lives here
 WORKDIR /rails
 
-COPY package.json /portfolioapp/package.json
-COPY yarn.lock /portfolioapp/yarn.lock
-RUN npm install --global yarn
-RUN yarn install --frozen-lockfile --network-timeout 600000
-
 
 # Install base packages
 RUN apt-get update -qq && \
