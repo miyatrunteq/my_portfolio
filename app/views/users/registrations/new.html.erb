@@ -4,6 +4,11 @@
   <%= render "users/shared/error_messages", resource: resource %>
 
   <div class="mb-4">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" %>
+  </div>
+
+  <div class="mb-4">
     <%= f.label :email, class: "block text-sm font-medium text-gray-700" %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" %>
   </div>
@@ -22,7 +27,7 @@
   </div>
 
   <div class="text-center">
-    <%= f.submit "Sign up", class: "bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition" %>
+    <%= f.submit "ユーザー登録", class: "bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition" %>
   </div>
 <% end %>
 
